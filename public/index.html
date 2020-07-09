@@ -13,11 +13,58 @@
     <!-- Font Awesome CSS  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <!-- Main CSS  -->
-    <link rel="stylesheet" href="../src/css/main.css">;
+    <link rel="stylesheet" href="../src/css/main.css">
 </head>
 
 <body>
-    <div id="root"></div>
+    <!-- <div id="root"></div> -->
+    <header class="navBarHeader">
+        <div class="navBarHeader__content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img class="navbar-brand" src="../src/imgs/web-logo.png"></img>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Lịch Chiếu <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cụm Rạp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin Tưc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Ứng Dụng</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="navbarRight">
+                    <a href="#" class="navbar-login">
+                        <img src="../src/imgs/avatar.png" alt="">
+                        <p>Đăng nhập</p>
+                    </a>
+                    <a href="#" class="navbar-location">
+                        <img src="../src/imgs/location-header.png" alt="">
+                        <p>Hồ Chí Minh</p>
+                    </a>
+                    <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

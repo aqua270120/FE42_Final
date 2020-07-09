@@ -1,0 +1,60 @@
+.navBarHeader {
+    position: relative;
+
+    .navBarHeader__content {
+        .navbar {
+            .navbar-brand {
+                width: 50px;
+            }
+
+            .navbar-collapse {
+                ul {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    li {
+                        margin-right: 20px;
+
+                        a {
+                            text-decoration: none;
+                            @include styleLinks(#000, $fs-0 - 1, $fw-normal);
+                        }
+                    }
+                }
+            }
+
+            .navbarRight {
+                a {
+                    text-decoration: none;
+                    @include styleLinks(#9b9b9b, $fs-0 - 2, $fw-normal);
+
+                    img {
+                        border-radius: 50%;
+                        width: 30px;
+                    }
+
+                    p {
+                        display: inline;
+                    }
+                }
+
+                .navbar-login {
+                    margin-right: 20px;
+                    padding: 10px;
+                    border-right: 1px dotted #9b9b9b;
+                }
+
+                .navbar-location {
+                    margin-right: 20px;
+                }
+
+                .dropdown-menu {
+                    left: unset;
+                    right: 0;
+                }
+            }
+
+        }
+    }
+}

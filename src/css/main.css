@@ -1,7 +1,67 @@
 * {
   padding: 0;
   margin: 0;
-  background-color: palegoldenrod;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-menu.show {
+  right: 0;
+}
+
+.navBarHeader {
+  position: relative;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbar-brand {
+  width: 50px;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbar-collapse ul {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbar-collapse ul li {
+  margin-right: 20px;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbar-collapse ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbarRight a {
+  text-decoration: none;
+  color: #9b9b9b;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbarRight a img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbarRight a p {
+  display: inline;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbarRight .navbar-login {
+  margin-right: 20px;
+  padding: 10px;
+  border-right: 1px dotted #9b9b9b;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbarRight .navbar-location {
+  margin-right: 20px;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbarRight .dropdown-menu {
+  left: unset;
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */
