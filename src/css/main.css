@@ -10,6 +10,24 @@
 
 .navBarHeader {
   position: relative;
+  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.navBarHeader .navBarHeader__content .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbar-toggler {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navBarHeader .navBarHeader__content .navbar .navbar-toggler {
+    display: block;
+  }
 }
 
 .navBarHeader .navBarHeader__content .navbar .navbar-brand {
@@ -19,8 +37,9 @@
 .navBarHeader .navBarHeader__content .navbar .navbar-collapse ul {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .navBarHeader .navBarHeader__content .navbar .navbar-collapse ul li {
@@ -32,6 +51,38 @@
   color: #000;
   font-size: 14px;
   font-weight: normal;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbar-collapse ul li a:hover {
+  color: #fb4226;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 992px) {
+  .navBarHeader .navBarHeader__content .navbar .navbar-collapse ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navBarHeader .navBarHeader__content .navbar .navbar-collapse ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbarRight {
+  position: absolute;
+  right: 10px;
 }
 
 .navBarHeader .navBarHeader__content .navbar .navbarRight a {
@@ -57,7 +108,7 @@
 }
 
 .navBarHeader .navBarHeader__content .navbar .navbarRight .navbar-location {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .navBarHeader .navBarHeader__content .navbar .navbarRight .navbar-location img {
@@ -67,5 +118,26 @@
 .navBarHeader .navBarHeader__content .navbar .navbarRight .dropdown-menu {
   left: unset;
   right: 0;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbarRight .dropdown-menu .dropdown-item {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: black;
+  text-transform: capitalize;
+  padding: 3px 20px;
+}
+
+.navBarHeader .navBarHeader__content .navbar .navbarRight .dropdown-menu .dropdown-item:hover {
+  background-color: #60c5ef;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navBarHeader .navBarHeader__content .navbar .navbarRight {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
