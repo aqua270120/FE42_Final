@@ -60,6 +60,10 @@
   margin-right: 20px;
 }
 
+.navBarHeader .navBarHeader__content .navbar .navbarRight .navbar-location img {
+  width: 15px;
+}
+
 .navBarHeader .navBarHeader__content .navbar .navbarRight .dropdown-menu {
   left: unset;
   right: 0;
