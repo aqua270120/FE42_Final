@@ -7,6 +7,10 @@
         .myNavbar {
             padding-top: 0;
             padding-bottom: 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
 
             .expandBtn {
                 display: none;
@@ -45,15 +49,10 @@
                         display: none;
                     }
 
-                    @include responsive("medium") {
-                        display: block;
-                        position: relative;
-                        width: 100%;
-                        height: 100%;
-                        left: 0;
-                        top: 0;
-                        transform: none;
-                    }
+                }
+
+                @include responsive("medium") {
+                    display: none;
                 }
             }
 
@@ -91,6 +90,7 @@
 
                 .dropdown-menu {
                     left: unset;
+                    top: 45px;
                     right: 0;
                     height: 300px;
                     overflow-y: auto;
@@ -112,7 +112,79 @@
                     display: none;
                 }
             }
+        }
 
+        .sidebar {
+            min-width: 250px;
+            max-width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: -250px;
+            /* top layer */
+            z-index: 9999;
+            padding: 20px;
+            transition: all 0.5s;
+            background-color: white;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+
+            .sidebar-header {
+                position: relative;
+
+                .navbar-login {
+                    img {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        display: inline;
+                    }
+
+                    .dismiss {
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    padding: 10px;
+                }
+            }
+
+            &.active {
+                right: 0;
+            }
+        }
+    }
+
+    .navBarHeader__overlay {
+        display: none;
+        position: fixed;
+        /* full screen */
+        width: 100vw;
+        height: 100vh;
+        /* transparent black */
+        background: rgba(0, 0, 0, 0.7);
+        /* middle layer, i.e. appears below the sidebar */
+        z-index: 998;
+        opacity: 0;
+        /* animate the transition */
+        transition: all 0.5s;
+
+        &.active {
+            display: block;
+            opacity: 1;
         }
     }
 }
