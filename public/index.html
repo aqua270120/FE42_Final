@@ -22,13 +22,11 @@
         <div class="navBarHeader__content">
             <nav class="navbar navbar-expand-md navbar-light myNavbar ">
                 <img class="navbar-brand" src="../src/imgs/web-logo.png"></img>
-                <button class="navbar-toggler expandBtn" type="button" data-toggle="collapse"
-                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler expandBtn" type="button" id="navbarTogglerDemo02">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse navBarHeader__menu" id="navbarTogglerDemo02">
+                <div class=" navBarHeader__menu">
                     <ul class="navbar-nav mr-auto  mt-lg-0">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Lịch Chiếu <span class="sr-only">(current)</span></a>
@@ -58,17 +56,17 @@
                         aria-haspopup="true" aria-expanded="false">
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+                        <a class="dropdown-item" href="#">Hà Nội</a>
+                        <a class="dropdown-item" href="#">Đà Nẵng</a>
+                        <a class="dropdown-item" href="#">Hải Phòng</a>
+                        <a class="dropdown-item" href="#">Biên Hòa</a>
+                        <a class="dropdown-item" href="#">Nha Trang</a>
+                        <a class="dropdown-item" href="#">Bình Dương</a>
+                        <a class="dropdown-item" href="#">Phan Thiết</a>
+                        <a class="dropdown-item" href="#">Hạ Long</a>
+                        <a class="dropdown-item" href="#">Cần Thơ</a>
+                        <a class="dropdown-item" href="#">Vũng Tàu</a>
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Action</a>
@@ -76,7 +74,37 @@
                         <a class="dropdown-item" href="#">Action</a>
                     </div>
                 </div>
+
             </nav>
+            <nav class="sidebar">
+
+                <div class="sidebar-header">
+                    <a href="#" class="navbar-login">
+                        <img src="../src/imgs/avatar.png" alt="">
+                        <p>Đăng nhập</p>
+                        <div class="dismiss">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <ul class="navbar-nav mr-auto  mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Lịch Chiếu <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cụm Rạp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tin Tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Ứng Dụng</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navBarHeader__overlay">
+
         </div>
     </header>
     <!-- Optional JavaScript -->
@@ -90,6 +118,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            $('.dismiss, .navBarHeader__overlay').on('click', function () {
+                // hide sidebar
+                $('.sidebar').removeClass('active');
+                // hide overlay
+                $('.navBarHeader__overlay').removeClass('active');
+            });
+
+            $('#navbarTogglerDemo02').on('click', function () {
+                // open sidebar
+                $('.sidebar').addClass('active');
+                // fade in the overlay
+                $('.navBarHeader__overlay').addClass('active');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
