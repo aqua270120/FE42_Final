@@ -15,26 +15,26 @@
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.navBarHeader .navBarHeader__content .navbar {
+.navBarHeader .navBarHeader__content .myNavbar {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbar-toggler {
+.navBarHeader .navBarHeader__content .myNavbar .expandBtn {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  .navBarHeader .navBarHeader__content .navbar .navbar-toggler {
+  .navBarHeader .navBarHeader__content .myNavbar .expandBtn {
     display: block;
   }
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbar-brand {
+.navBarHeader .navBarHeader__content .myNavbar .navbar-brand {
   width: 50px;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbar-collapse ul {
+.navBarHeader .navBarHeader__content .myNavbar .navBarHeader__menu ul {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -42,11 +42,11 @@
           transform: translate(-50%, -50%);
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbar-collapse ul li {
+.navBarHeader .navBarHeader__content .myNavbar .navBarHeader__menu ul .nav-item {
   margin-right: 20px;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbar-collapse ul li a {
+.navBarHeader .navBarHeader__content .myNavbar .navBarHeader__menu ul .nav-item .nav-link {
   text-decoration: none;
   color: #000;
   font-size: 14px;
@@ -55,20 +55,20 @@
   transition: all 0.5s;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbar-collapse ul li a:hover {
+.navBarHeader .navBarHeader__content .myNavbar .navBarHeader__menu ul .nav-item .nav-link:hover {
   color: #fb4226;
   font-size: 14px;
   font-weight: normal;
 }
 
 @media screen and (max-width: 992px) {
-  .navBarHeader .navBarHeader__content .navbar .navbar-collapse ul {
+  .navBarHeader .navBarHeader__content .myNavbar .navBarHeader__menu ul {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .navBarHeader .navBarHeader__content .navbar .navbar-collapse ul {
+  .navBarHeader .navBarHeader__content .myNavbar .navBarHeader__menu ul {
     display: block;
     position: relative;
     width: 100%;
@@ -80,49 +80,49 @@
   }
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight {
   position: absolute;
   right: 10px;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight a {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight a {
   text-decoration: none;
   color: #9b9b9b;
   font-size: 13px;
   font-weight: normal;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight a img {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight a img {
   border-radius: 50%;
   width: 30px;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight a p {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight a p {
   display: inline;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight .navbar-login {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight a.navbar-login {
   margin-right: 20px;
   padding: 10px;
   border-right: 1px dotted #9b9b9b;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight .navbar-location {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight a.navbar-location {
   margin-right: 25px;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight .navbar-location img {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight a.navbar-location img {
   width: 20px;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight .dropdown-menu {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight .dropdown-menu {
   left: unset;
   right: 0;
   height: 300px;
   overflow-y: auto;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight .dropdown-menu .dropdown-item {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight .dropdown-menu .dropdown-item {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: black;
@@ -130,13 +130,13 @@
   padding: 3px 20px;
 }
 
-.navBarHeader .navBarHeader__content .navbar .navbarRight .dropdown-menu .dropdown-item:hover {
+.navBarHeader .navBarHeader__content .myNavbar .navbarRight .dropdown-menu .dropdown-item:hover {
   background-color: #60c5ef;
   color: white;
 }
 
 @media screen and (max-width: 768px) {
-  .navBarHeader .navBarHeader__content .navbar .navbarRight {
+  .navBarHeader .navBarHeader__content .myNavbar .navbarRight {
     display: none;
   }
 }
