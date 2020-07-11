@@ -4,11 +4,11 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, .3);
 
     .navBarHeader__content {
-        .navbar {
+        .myNavbar {
             padding-top: 0;
             padding-bottom: 0;
 
-            .navbar-toggler {
+            .expandBtn {
                 display: none;
 
                 @include responsive("medium") {
@@ -20,17 +20,17 @@
                 width: 50px;
             }
 
-            .navbar-collapse {
+            .navBarHeader__menu {
                 ul {
                     position: absolute;
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
 
-                    li {
+                    .nav-item {
                         margin-right: 20px;
 
-                        a {
+                        .nav-link {
                             text-decoration: none;
                             @include styleLinks(#000, $fs-0 - 1, $fw-normal);
                             transition: all 0.5s;
@@ -73,19 +73,19 @@
                     p {
                         display: inline;
                     }
-                }
 
-                .navbar-login {
-                    margin-right: 20px;
-                    padding: 10px;
-                    border-right: 1px dotted #9b9b9b;
-                }
+                    &.navbar-login {
+                        margin-right: 20px;
+                        padding: 10px;
+                        border-right: 1px dotted #9b9b9b;
+                    }
 
-                .navbar-location {
-                    margin-right: 25px;
+                    &.navbar-location {
+                        margin-right: 25px;
 
-                    img {
-                        width: 20px;
+                        img {
+                            width: 20px;
+                        }
                     }
                 }
 
