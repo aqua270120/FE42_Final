@@ -1,13 +1,16 @@
 .navBarHeader {
-    position: relative;
+    position: fixed;
     background-color: rgba(255, 255, 255, .95);
     box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
 
     .navBarHeader__content {
         .myNavbar {
             padding-top: 0;
             padding-bottom: 0;
-            position: fixed;
             width: 100%;
             top: 0;
             left: 0;
