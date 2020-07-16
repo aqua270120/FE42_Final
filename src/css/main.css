@@ -9,16 +9,19 @@
 }
 
 .navBarHeader {
-  position: relative;
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .navBarHeader .navBarHeader__content .myNavbar {
   padding-top: 0;
   padding-bottom: 0;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -208,5 +211,68 @@
 .navBarHeader .navBarHeader__overlay.active {
   display: block;
   opacity: 1;
+}
+
+.myCarousel {
+  margin-top: 60px;
+}
+
+.myCarousel .carousel .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  opacity: 1;
+}
+
+.myCarousel .carousel .carousel-indicators li.active {
+  background-color: #fb4226;
+}
+
+.myCarousel .carousel .carousel-inner .carousel-item:hover a button {
+  opacity: 1;
+}
+
+.myCarousel .carousel .carousel-inner .carousel-item a button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.myCarousel .carousel .carousel-inner .carousel-item a button:focus {
+  outline: none;
+}
+
+.myCarousel .carousel .carousel-control-prev {
+  background-image: url("./../imgs/back-session.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 100px;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 15px;
+}
+
+.myCarousel .carousel .carousel-control-next {
+  background-image: url("./../imgs/next-session.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 100px;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15px;
 }
 /*# sourceMappingURL=main.css.map */
