@@ -23,6 +23,14 @@
     }
 }
 
+@mixin bgParallax() {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
 @mixin responsive($screen) {
     @if map-has-key($map: $breakpoints, $key: $screen) {
         $value: map-get($map: $breakpoints, $key: $screen);
