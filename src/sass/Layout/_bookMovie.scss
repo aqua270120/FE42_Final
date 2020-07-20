@@ -1,0 +1,49 @@
+.bookMovie {
+    position: relative;
+
+    .bookMovie__content {
+        width: 940px;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+        .row {
+            width: 100%;
+
+            .dropdown {
+                border-right: 1px solid rgba(238, 238, 238, .88);
+
+                .dropdown-toggle {
+                    &::after {
+                        position: absolute;
+                        right: 5%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                .bookBtn {
+                    color: white;
+                    text-transform: uppercase;
+                    padding: 12px 8px;
+                    background-color: #4a4a4a;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @include responsive("large") {
+        display: none;
+    }
+}
