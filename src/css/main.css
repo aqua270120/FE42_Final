@@ -348,4 +348,131 @@
     display: none;
   }
 }
+
+.movieBooklet {
+  padding: 100px 0px;
+  background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/movie-details-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.movieBooklet .movieBooklet__content .myMovieTab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: unset;
+  margin-bottom: 30px;
+}
+
+.movieBooklet .movieBooklet__content .myMovieTab .nav-item {
+  border-bottom: 1px solid transparent;
+  margin: 0 15px;
+}
+
+.movieBooklet .movieBooklet__content .myMovieTab .nav-item .nav-link {
+  border: none;
+  border-radius: 0;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.movieBooklet .movieBooklet__content .myMovieTab .nav-item .nav-link.active {
+  color: #d4dd29;
+  background-color: unset;
+  border-color: unset;
+}
+
+.movieBooklet .movieBooklet__content .myMovieTab .nav-item .nav-link:hover, .movieBooklet .movieBooklet__content .myMovieTab .nav-item .nav-link:focus {
+  border-color: unset;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook {
+  position: relative;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item {
+  overflow: hidden;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .movieImg img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .movieImg img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .movieName a {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+  padding: 20px 0px;
+  display: block;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .movieName a:hover {
+  color: yellow;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .buyTicket {
+  height: 45px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .buyTicket:hover {
+  background-color: white;
+  color: green;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav {
+  color: #666;
+  font-size: 62px;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav .owl-prev {
+  position: absolute;
+  top: 20%;
+  left: -60px;
+  outline: none;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav .owl-prev:hover {
+  background-color: unset;
+  color: #666;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav .owl-next {
+  position: absolute;
+  top: 20%;
+  right: -60px;
+  outline: none;
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav .owl-next:hover {
+  background-color: unset;
+  color: #666;
+}
 /*# sourceMappingURL=main.css.map */

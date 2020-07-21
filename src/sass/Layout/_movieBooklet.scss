@@ -1,0 +1,128 @@
+.movieBooklet {
+    padding: 100px 0px;
+    background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/movie-details-bg.jpg");
+    @include bgParallax;
+
+    .movieBooklet__content {
+        .myMovieTab {
+            display: flex;
+            justify-content: center;
+            border-bottom: unset;
+            margin-bottom: 30px;
+
+            .nav-item {
+                border-bottom: 1px solid transparent;
+                margin: 0 15px;
+
+                .nav-link {
+                    border: none;
+                    border-radius: 0;
+                    font-size: 20px;
+                    color: white;
+                    text-transform: uppercase;
+
+                    &.active {
+                        color: #d4dd29;
+                        background-color: unset;
+                        border-color: unset;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        border-color: unset;
+                    }
+                }
+            }
+
+        }
+
+        .myTabContent {
+            .container {
+                .movieBook {
+                    position: relative;
+
+                    .item {
+                        overflow: hidden;
+
+                        .movieImg {
+                            img {
+                                transform: scale(1);
+                                transition: .3s ease-in-out;
+
+                                &:hover {
+                                    transform: scale(1.1);
+
+                                }
+                            }
+
+                        }
+
+                        .movieName {
+
+                            a {
+                                font-size: 18px;
+                                color: white;
+                                font-weight: 600;
+                                transition: all 0.5s;
+                                text-align: center;
+                                padding: 20px 0px;
+                                display: block;
+
+                                &:hover {
+                                    color: yellow;
+                                }
+                            }
+                        }
+
+                        .buyTicket {
+                            height: 45px;
+                            background-color: green;
+                            color: white;
+                            text-align: center;
+                            line-height: 45px;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            border-radius: 3px;
+                            font-weight: 600;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                background-color: white;
+                                color: green;
+                            }
+                        }
+                    }
+
+                    .owl-nav {
+                        color: #666;
+                        font-size: 62px;
+
+                        .owl-prev {
+                            position: absolute;
+                            top: 20%;
+                            left: -60px;
+                            outline: none;
+
+                            &:hover {
+                                background-color: unset;
+                                color: #666;
+                            }
+                        }
+
+                        .owl-next {
+                            position: absolute;
+                            top: 20%;
+                            right: -60px;
+                            outline: none;
+
+                            &:hover {
+                                background-color: unset;
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
