@@ -393,27 +393,27 @@
   border-color: unset;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook {
   position: relative;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .item {
   overflow: hidden;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .movieImg img {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .item .movieImg img {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .movieImg img:hover {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .item .movieImg img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .movieName a {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .item .movieName a {
   font-size: 18px;
   color: white;
   font-weight: 600;
@@ -424,11 +424,11 @@
   display: block;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .movieName a:hover {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .item .movieName a:hover {
   color: yellow;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .buyTicket {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .item .buyTicket {
   height: 45px;
   background-color: green;
   color: white;
@@ -442,36 +442,42 @@
   transition: all 0.5s;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .item .buyTicket:hover {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .item .buyTicket:hover {
   background-color: white;
   color: green;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .owl-nav {
   color: #666;
   font-size: 62px;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav .owl-prev {
+@media screen and (max-width: 580px) {
+  .movieBooklet .movieBooklet__content .myTabContent .movieBook .owl-nav {
+    display: none;
+  }
+}
+
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .owl-nav .owl-prev {
   position: absolute;
   top: 20%;
-  left: -60px;
+  left: -30px;
   outline: none;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav .owl-prev:hover {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .owl-nav .owl-prev:hover {
   background-color: unset;
   color: #666;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav .owl-next {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .owl-nav .owl-next {
   position: absolute;
   top: 20%;
-  right: -60px;
+  right: -30px;
   outline: none;
 }
 
-.movieBooklet .movieBooklet__content .myTabContent .container .movieBook .owl-nav .owl-next:hover {
+.movieBooklet .movieBooklet__content .myTabContent .movieBook .owl-nav .owl-next:hover {
   background-color: unset;
   color: #666;
 }
