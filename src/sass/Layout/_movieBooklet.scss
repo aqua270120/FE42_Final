@@ -1,5 +1,5 @@
 .movieBooklet {
-    padding: 100px 0px;
+    padding: 100px 0px 50px;
     background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/movie-details-bg.jpg");
     @include bgParallax;
 
@@ -12,14 +12,15 @@
 
             .nav-item {
                 border-bottom: 1px solid transparent;
-                margin: 0 15px;
+                transition: all 0.6s;
 
                 .nav-link {
                     border: none;
                     border-radius: 0;
-                    font-size: 20px;
+                    font-size: 15px;
                     color: white;
                     text-transform: uppercase;
+                    transition: all 0.5s;
 
                     &.active {
                         color: #d4dd29;
@@ -30,6 +31,14 @@
                     &:hover,
                     &:focus {
                         border-color: unset;
+                    }
+                }
+
+                &:hover {
+                    border-color: #d4dd29;
+
+                    .nav-link {
+                        color: #d4dd29;
                     }
                 }
             }
@@ -66,9 +75,11 @@
                             text-align: center;
                             padding: 20px 0px;
                             display: block;
+                            cursor: pointer;
 
                             &:hover {
                                 color: yellow;
+
                             }
                         }
                     }
@@ -84,6 +95,7 @@
                         border-radius: 3px;
                         font-weight: 600;
                         transition: all 0.5s;
+                        cursor: pointer;
 
                         &:hover {
                             background-color: white;
@@ -103,7 +115,7 @@
                     .owl-prev {
                         position: absolute;
                         top: 20%;
-                        left: -30px;
+                        left: -35px;
                         outline: none;
 
                         &:hover {
@@ -115,7 +127,7 @@
                     .owl-next {
                         position: absolute;
                         top: 20%;
-                        right: -30px;
+                        right: -35px;
                         outline: none;
 
                         &:hover {
