@@ -1,5 +1,5 @@
 .movieBooklet {
-    padding: 100px 0px;
+    padding: 100px 0px 50px;
     background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/movie-details-bg.jpg");
     @include bgParallax;
 
@@ -12,14 +12,15 @@
 
             .nav-item {
                 border-bottom: 1px solid transparent;
-                margin: 0 15px;
+                transition: all 0.6s;
 
                 .nav-link {
                     border: none;
                     border-radius: 0;
-                    font-size: 20px;
+                    font-size: 15px;
                     color: white;
                     text-transform: uppercase;
+                    transition: all 0.5s;
 
                     &.active {
                         color: #d4dd29;
@@ -32,97 +33,111 @@
                         border-color: unset;
                     }
                 }
+
+                &:hover {
+                    border-color: #d4dd29;
+
+                    .nav-link {
+                        color: #d4dd29;
+                    }
+                }
             }
 
         }
 
         .myTabContent {
-            .container {
-                .movieBook {
-                    position: relative;
+            .movieBook {
+                position: relative;
 
-                    .item {
-                        overflow: hidden;
+                .item {
+                    overflow: hidden;
 
-                        .movieImg {
-                            img {
-                                transform: scale(1);
-                                transition: .3s ease-in-out;
-
-                                &:hover {
-                                    transform: scale(1.1);
-
-                                }
-                            }
-
-                        }
-
-                        .movieName {
-
-                            a {
-                                font-size: 18px;
-                                color: white;
-                                font-weight: 600;
-                                transition: all 0.5s;
-                                text-align: center;
-                                padding: 20px 0px;
-                                display: block;
-
-                                &:hover {
-                                    color: yellow;
-                                }
-                            }
-                        }
-
-                        .buyTicket {
-                            height: 45px;
-                            background-color: green;
-                            color: white;
-                            text-align: center;
-                            line-height: 45px;
-                            font-size: 18px;
-                            text-transform: uppercase;
-                            border-radius: 3px;
-                            font-weight: 600;
-                            transition: all 0.5s;
+                    .movieImg {
+                        img {
+                            transform: scale(1);
+                            transition: .3s ease-in-out;
 
                             &:hover {
-                                background-color: white;
-                                color: green;
+                                transform: scale(1.1);
+
+                            }
+                        }
+
+                    }
+
+                    .movieName {
+
+                        a {
+                            font-size: 18px;
+                            color: white;
+                            font-weight: 600;
+                            transition: all 0.5s;
+                            text-align: center;
+                            padding: 20px 0px;
+                            display: block;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: yellow;
+
                             }
                         }
                     }
 
-                    .owl-nav {
-                        color: #666;
-                        font-size: 62px;
+                    .buyTicket {
+                        height: 45px;
+                        background-color: green;
+                        color: white;
+                        text-align: center;
+                        line-height: 45px;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        border-radius: 3px;
+                        font-weight: 600;
+                        transition: all 0.5s;
+                        cursor: pointer;
 
-                        .owl-prev {
-                            position: absolute;
-                            top: 20%;
-                            left: -60px;
-                            outline: none;
-
-                            &:hover {
-                                background-color: unset;
-                                color: #666;
-                            }
+                        &:hover {
+                            background-color: white;
+                            color: green;
                         }
+                    }
+                }
 
-                        .owl-next {
-                            position: absolute;
-                            top: 20%;
-                            right: -60px;
-                            outline: none;
+                .owl-nav {
+                    color: #666;
+                    font-size: 62px;
 
-                            &:hover {
-                                background-color: unset;
-                                color: #666;
-                            }
+                    @media screen and (max-width: 580px) {
+                        display: none;
+                    }
+
+                    .owl-prev {
+                        position: absolute;
+                        top: 20%;
+                        left: -35px;
+                        outline: none;
+
+                        &:hover {
+                            background-color: unset;
+                            color: #666;
+                        }
+                    }
+
+                    .owl-next {
+                        position: absolute;
+                        top: 20%;
+                        right: -35px;
+                        outline: none;
+
+                        &:hover {
+                            background-color: unset;
+                            color: #666;
                         }
                     }
                 }
             }
+
         }
     }
 }
