@@ -214,7 +214,7 @@
 }
 
 .myCarousel {
-  margin-top: 60px;
+  margin-top: 36px;
 }
 
 .myCarousel .carousel .carousel-indicators {
@@ -379,11 +379,12 @@
 .movieBooklet .movieBooklet__content .myMovieTab .nav-item .nav-link {
   border: none;
   border-radius: 0;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  margin: 0 10px;
 }
 
 .movieBooklet .movieBooklet__content .myMovieTab .nav-item .nav-link.active {
@@ -394,6 +395,13 @@
 
 .movieBooklet .movieBooklet__content .myMovieTab .nav-item .nav-link:hover, .movieBooklet .movieBooklet__content .myMovieTab .nav-item .nav-link:focus {
   border-color: unset;
+}
+
+@media screen and (max-width: 768px) {
+  .movieBooklet .movieBooklet__content .myMovieTab .nav-item .nav-link {
+    font-size: 15px;
+    margin: 0;
+  }
 }
 
 .movieBooklet .movieBooklet__content .myMovieTab .nav-item:hover {
@@ -502,7 +510,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding: 100px 0px 50px;
+  padding: 50px 0px 30px;
 }
 
 .event .event__content .event__list .event__header {
@@ -530,10 +538,248 @@
   border-color: unset;
 }
 
+.event .event__content .event__list .event__header li a.active {
+  font-weight: 600;
+  border-bottom: 1px solid #bcdc95;
+}
+
 .event .event__content .event__list .event__header .line {
   width: 3px;
   height: 30px;
   background-color: #bcdc95;
   margin: auto 10px;
+}
+
+.event .event__content .event__list .eventTabContent .eventCarousel .owl-stage-outer {
+  margin: 50px 0px 30px;
+}
+
+.event .event__content .event__list .eventTabContent .eventCarousel .owl-dots .owl-dot {
+  outline: none;
+}
+
+.event .event__content .event__list .eventTabContent .eventCarousel .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+}
+
+.event .event__content .event__list .eventTabContent .eventCarousel .owl-dots .owl-dot.active span {
+  background-color: #45ab3c;
+}
+
+.event .event__content .event__list .eventTabContent .eventCarousel .owl-dots .owl-dot:hover span {
+  background-color: none;
+}
+
+.footer {
+  background-image: url("https://tix.vn/app/assets/img/icons/backapp.jpg");
+  background-size: contain;
+}
+
+.footer .footer__content {
+  padding: 100px 0px;
+}
+
+.footer .footer__content .footUpLeft {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer__content .footUpLeft .footerTitle {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.footer .footer__content .footUpLeft .footerAdTitle {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+
+.footer .footer__content .footUpLeft .btnAd {
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__content .footUpLeft .btnAd {
+    margin: 0 auto;
+  }
+}
+
+.footer .footer__content .footUpLeft .phoneVersion {
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer .footer__content .footUpLeft .phoneVersion a {
+  -webkit-text-decoration: white;
+          text-decoration: white;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__content .footUpLeft {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.footer .footer__content .footUpRight .footUpRight__content {
+  position: relative;
+}
+
+.footer .footer__content .footUpRight .footUpRight__content .phoneImg {
+  padding: 0 30.8%;
+  max-width: 100%;
+}
+
+.footer .footer__content .footUpRight .footUpRight__content .footerCarousel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 1.3% 31.9% 0% 31.8%;
+}
+
+.footer .footer__content .footUpRight .footUpRight__content .footerCarousel .owl-stage-outer {
+  border-radius: 20px;
+}
+
+.coWorker {
+  padding: 20px 0px 0px;
+  background-color: #222;
+  color: #949494;
+}
+
+.coWorker .coWorker__content {
+  width: 940px;
+  margin: auto;
+}
+
+.coWorker .coWorker__content .coWorker__left p {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.coWorker .coWorker__content .coWorker__left a {
+  text-decoration: none;
+  display: block;
+  color: #949494;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: 10px;
+}
+
+.coWorker .coWorker__content .coWorker__middle p {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.coWorker .coWorker__content .coWorker__middle .icon-selection a {
+  text-decoration: none;
+}
+
+.coWorker .coWorker__content .coWorker__middle .icon-selection a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.coWorker .coWorker__content .coWorker__middle .icon-selection a img:hover {
+  opacity: 0.7;
+}
+
+.coWorker .coWorker__content .coWorker__right .col-md-6 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.coWorker .coWorker__content .coWorker__right .col-md-6 p {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.coWorker .coWorker__content .coWorker__right .col-md-6 a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1010px) {
+  .coWorker .coWorker__content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coWorker .coWorker__content {
+    text-align: center;
+  }
+}
+
+.coWorker .coWorker__content .coWorker__afterCredit {
+  padding: 30px 0px 0px;
+  border-top: 1px solid;
+}
+
+.coWorker .coWorker__content .coWorker__afterCredit h4 {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.coWorker .coWorker__content .coWorker__afterCredit p {
+  color: #949494;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.coWorker .coWorker__content .coWorker__afterCredit p a {
+  text-decoration: none;
+  color: red;
+}
+
+.coWorker .coWorker__content .coWorker__afterCredit .ziOnIcon {
+  width: 80px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.coWorker .coWorker__content .coWorker__afterCredit .vcdnIcon {
+  width: 120px;
 }
 /*# sourceMappingURL=main.css.map */

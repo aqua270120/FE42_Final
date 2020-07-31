@@ -1,7 +1,7 @@
 .event {
     background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-home-02.jpg");
     @include bgParallax;
-    padding: 100px 0px 50px;
+    padding: 50px 0px 30px;
 
     .event__content {
         .event__list {
@@ -25,7 +25,10 @@
                             border-color: unset;
                         }
 
-                        &.discount__title {}
+                        &.active {
+                            font-weight: 600;
+                            border-bottom: 1px solid #bcdc95;
+                        }
                     }
                 }
 
@@ -34,6 +37,38 @@
                     height: 30px;
                     background-color: #bcdc95;
                     margin: auto 10px;
+                }
+            }
+
+            .eventTabContent {
+                .eventCarousel {
+                    .owl-stage-outer {
+                        margin: 50px 0px 30px;
+                    }
+
+                    .owl-dots {
+                        .owl-dot {
+                            outline: none;
+
+                            span {
+                                width: 12px;
+                                height: 12px;
+                                background-color: white;
+
+                            }
+
+                            &.active {
+                                span {
+                                    background-color: #45ab3c;
+                                }
+                            }
+
+                            &:hover span {
+                                background-color: none;
+                            }
+
+                        }
+                    }
                 }
             }
         }

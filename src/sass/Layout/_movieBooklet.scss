@@ -17,10 +17,11 @@
                 .nav-link {
                     border: none;
                     border-radius: 0;
-                    font-size: 15px;
+                    font-size: 20px;
                     color: white;
                     text-transform: uppercase;
                     transition: all 0.5s;
+                    margin: 0 10px;
 
                     &.active {
                         color: #d4dd29;
@@ -31,6 +32,11 @@
                     &:hover,
                     &:focus {
                         border-color: unset;
+                    }
+
+                    @include responsive("medium") {
+                        font-size: 15px;
+                        margin: 0;
                     }
                 }
 

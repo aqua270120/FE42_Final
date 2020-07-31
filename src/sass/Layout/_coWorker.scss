@@ -1,0 +1,113 @@
+.coWorker {
+    padding: 20px 0px 0px;
+    background-color: #222;
+    color: #949494;
+
+    .coWorker__content {
+        width: 940px;
+        margin: auto;
+
+        .coWorker__left {
+            p {
+                @include styleLinks(white, 12px, 500);
+            }
+
+            a {
+                text-decoration: none;
+                display: block;
+                @include styleLinks(#949494, 12px, 700);
+                transition: all 0.5s;
+                margin-bottom: 10px;
+            }
+        }
+
+        .coWorker__middle {
+            p {
+                @include styleLinks(white, 12px, 500);
+            }
+
+            .icon-selection {
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        margin-right: 15px;
+                        margin-bottom: 15px;
+                        transition: all 0.5s;
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+
+            @include responsive("large") {}
+        }
+
+        .coWorker__right {
+            .col-md-6 {
+                text-align: center;
+                margin-bottom: 15px;
+
+                p {
+                    @include styleLinks(white, 12px, 500);
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 1010px) {
+            width: 100%;
+        }
+
+        @include responsive("medium") {
+            text-align: center;
+        }
+
+        .coWorker__afterCredit {
+            padding: 30px 0px 0px;
+            border-top: 1px solid;
+
+            h4 {
+                @include styleLinks(white, 12px, 400);
+            }
+
+            p {
+                @include styleLinks(#949494, 12px, 500);
+                line-height: 20px;
+                margin-bottom: 0;
+
+                a {
+                    text-decoration: none;
+                    color: red;
+                }
+            }
+
+            .ziOnIcon {
+                width: 80px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+
+            .vcdnIcon {
+                width: 120px;
+
+            }
+        }
+    }
+
+
+}
