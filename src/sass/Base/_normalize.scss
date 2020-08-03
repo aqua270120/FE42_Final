@@ -1,3 +1,77 @@
 .dropdown-menu.show {
     right: 0
 }
+
+.myCarousel {
+    .carousel {
+        .carousel-indicators {
+            bottom: 12%;
+
+            li {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #d8d8d8;
+                opacity: 1;
+
+                &.active {
+                    background-color: #fb4226;
+                }
+            }
+        }
+    }
+}
+
+.movieBooklet {
+    .movieBooklet__content {
+        .myTabContent {
+            .owl-nav {
+                button {
+                    color: #666;
+                    font-size: 62px;
+                    position: absolute;
+                    top: 20%;
+                    outline: none;
+
+                    &.owl-prev {
+                        left: -35px;
+                    }
+
+                    &.owl-next {
+                        right: -35px;
+                    }
+                }
+
+                @media screen and (max-width: 580px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.eventTabContent {
+    .eventCarousel {
+        .owl-stage-outer {
+            margin: 50px 0px 30px;
+        }
+
+        .owl-dots {
+            .owl-dot {
+                outline: none;
+
+                span {
+                    width: 12px;
+                    height: 12px;
+                    background-color: white;
+                }
+
+                &.active {
+                    span {
+                        background-color: #45ab3c;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,14 +4,11 @@
     .bookMovie__content {
         width: 940px;
         height: 80px;
-        margin: auto;
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include transFormMiddle();
         background-color: white;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, .3);
@@ -21,6 +18,8 @@
 
             .dropdown {
                 border-right: 1px solid rgba(238, 238, 238, .88);
+                padding-right: 0;
+                cursor: pointer;
 
                 .dropdown-toggle {
                     &::after {
@@ -31,6 +30,15 @@
                     }
                 }
 
+                .dropdown-menu {
+                    margin-top: 1.125rem;
+                    left: -10% !important;
+
+                    .dropdown-item {
+                        padding: .25rem .8rem;
+                    }
+                }
+
                 .bookBtn {
                     color: white;
                     text-transform: uppercase;
@@ -38,6 +46,18 @@
                     background-color: #4a4a4a;
                     border-radius: 4px;
                     cursor: pointer;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: red;
+                        background-color: black;
+                    }
+                }
+
+                &:nth-child(1) {
+                    .dropdown-menu {
+                        left: -5% !important;
+                    }
                 }
             }
         }

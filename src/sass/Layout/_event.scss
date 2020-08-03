@@ -12,21 +12,15 @@
 
                 li {
                     a {
-                        background-color: unset;
-                        border: unset;
-                        color: #bcdc95;
-                        font-size: 28px;
-                        font-weight: 500;
+                        background-color: transparent;
+                        border: none;
+                        @include styleLinks(#bcdc95, 28px, 500);
                         text-transform: uppercase;
-                        padding-left: 0;
-                        padding-right: 0;
-
-                        &:hover {
-                            border-color: unset;
-                        }
+                        padding: 0;
+                        letter-spacing: 1px;
 
                         &.active {
-                            font-weight: 600;
+                            @include styleLinks(#bcdc95, 28px, 600);
                             border-bottom: 1px solid #bcdc95;
                         }
                     }
@@ -37,38 +31,6 @@
                     height: 30px;
                     background-color: #bcdc95;
                     margin: auto 10px;
-                }
-            }
-
-            .eventTabContent {
-                .eventCarousel {
-                    .owl-stage-outer {
-                        margin: 50px 0px 30px;
-                    }
-
-                    .owl-dots {
-                        .owl-dot {
-                            outline: none;
-
-                            span {
-                                width: 12px;
-                                height: 12px;
-                                background-color: white;
-
-                            }
-
-                            &.active {
-                                span {
-                                    background-color: #45ab3c;
-                                }
-                            }
-
-                            &:hover span {
-                                background-color: none;
-                            }
-
-                        }
-                    }
                 }
             }
         }

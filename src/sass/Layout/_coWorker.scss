@@ -7,74 +7,55 @@
         width: 940px;
         margin: auto;
 
-        .coWorker__left {
-            p {
-                @include styleLinks(white, 12px, 500);
-            }
+        a {
+            text-decoration: none;
+            @include styleLinks(#949494, 12px, 700);
+            margin-bottom: 10px;
 
-            a {
-                text-decoration: none;
-                display: block;
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 15px;
+                margin-bottom: 15px;
                 @include styleLinks(#949494, 12px, 700);
+            }
+        }
+
+        p {
+            @include styleLinks(white, 12px, 500);
+            margin-bottom: 10px;
+        }
+
+        .coWorker__left {
+            a {
+                display: block;
                 transition: all 0.5s;
-                margin-bottom: 10px;
+
+                &:hover {
+                    color: white;
+                }
             }
         }
 
         .coWorker__middle {
-            p {
-                @include styleLinks(white, 12px, 500);
-            }
-
             .icon-selection {
-                a {
-                    text-decoration: none;
+                img {
+                    transition: all 0.5s;
 
-                    img {
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 50%;
-                        margin-right: 15px;
-                        margin-bottom: 15px;
-                        transition: all 0.5s;
-
-                        &:hover {
-                            opacity: 0.7;
-                        }
+                    &:hover {
+                        opacity: 0.7;
                     }
                 }
             }
-
-            @include responsive("large") {}
         }
 
         .coWorker__right {
             .col-md-6 {
                 text-align: center;
                 margin-bottom: 15px;
-
-                p {
-                    @include styleLinks(white, 12px, 500);
-                    margin-bottom: 10px;
-                }
-
-                a {
-                    img {
-                        width: 30px;
-                        height: 30px;
-                        margin-right: 10px;
-                    }
-                }
             }
 
-        }
-
-        @media screen and (max-width: 1010px) {
-            width: 100%;
-        }
-
-        @include responsive("medium") {
-            text-align: center;
         }
 
         .coWorker__afterCredit {
@@ -86,12 +67,10 @@
             }
 
             p {
-                @include styleLinks(#949494, 12px, 500);
                 line-height: 20px;
                 margin-bottom: 0;
 
                 a {
-                    text-decoration: none;
                     color: red;
                 }
             }
@@ -104,8 +83,15 @@
 
             .vcdnIcon {
                 width: 120px;
-
             }
+        }
+
+        @media screen and (max-width: 1010px) {
+            width: 100%;
+        }
+
+        @include responsive("medium") {
+            text-align: center;
         }
     }
 

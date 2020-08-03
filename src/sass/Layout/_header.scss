@@ -1,11 +1,7 @@
 .navBarHeader {
-    position: fixed;
+    @include bgFixed();
     background-color: rgba(255, 255, 255, .95);
     box-shadow: 0 0 15px rgba(0, 0, 0, .3);
-    z-index: 1000;
-    width: 100%;
-    top: 0;
-    left: 0;
 
     .navBarHeader__content {
         .myNavbar {
@@ -38,7 +34,6 @@
                         margin-right: 20px;
 
                         .nav-link {
-                            text-decoration: none;
                             @include styleLinks(#000, $fs-0 - 1, $fw-normal);
                             transition: all 0.5s;
 
@@ -64,7 +59,7 @@
                 right: 10px;
 
                 a {
-                    text-decoration: none;
+
                     @include styleLinks(#9b9b9b, $fs-0 - 2, $fw-normal);
 
                     img {

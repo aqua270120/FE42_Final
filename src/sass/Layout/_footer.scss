@@ -6,7 +6,6 @@
         padding: 100px 0px;
 
         .footUpLeft {
-            color: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -24,7 +23,7 @@
                 background-color: red;
                 padding: 10px 20px;
                 border-radius: 3px;
-                border: none;
+                border: 1px solid transparent;
                 @include styleLinks(white, 16px, 700);
                 width: 50%;
 
@@ -65,7 +64,6 @@
                     top: 0;
                     width: 100%;
                     padding: 1.3% 31.9% 0% 31.8%;
-                    ;
 
                     .owl-stage-outer {
                         border-radius: 20px;

@@ -5,47 +5,35 @@
 
     .movieBooklet__content {
         .myMovieTab {
-            display: flex;
             justify-content: center;
-            border-bottom: unset;
+            border-bottom: none;
             margin-bottom: 30px;
 
             .nav-item {
                 border-bottom: 1px solid transparent;
-                transition: all 0.6s;
+                transition: all 0.5s;
+                margin-bottom: 0px !important;
 
                 .nav-link {
                     border: none;
-                    border-radius: 0;
                     font-size: 20px;
                     color: white;
                     text-transform: uppercase;
-                    transition: all 0.5s;
-                    margin: 0 10px;
-
-                    &.active {
-                        color: #d4dd29;
-                        background-color: unset;
-                        border-color: unset;
-                    }
 
                     &:hover,
-                    &:focus {
-                        border-color: unset;
+                    &:focus,
+                    &.active {
+                        color: #d4dd29;
+                        background-color: transparent;
                     }
 
                     @include responsive("medium") {
                         font-size: 15px;
-                        margin: 0;
                     }
                 }
 
                 &:hover {
                     border-color: #d4dd29;
-
-                    .nav-link {
-                        color: #d4dd29;
-                    }
                 }
             }
 
@@ -65,10 +53,8 @@
 
                             &:hover {
                                 transform: scale(1.1);
-
                             }
                         }
-
                     }
 
                     .movieName {
@@ -77,11 +63,11 @@
                             font-size: 18px;
                             color: white;
                             font-weight: 600;
-                            transition: all 0.5s;
                             text-align: center;
                             padding: 20px 0px;
                             display: block;
                             cursor: pointer;
+                            transition: all 0.5s;
 
                             &:hover {
                                 color: yellow;
@@ -92,7 +78,7 @@
 
                     .buyTicket {
                         height: 45px;
-                        background-color: green;
+                        background: green;
                         color: white;
                         text-align: center;
                         line-height: 45px;
@@ -100,48 +86,28 @@
                         text-transform: uppercase;
                         border-radius: 3px;
                         font-weight: 600;
-                        transition: all 0.5s;
                         cursor: pointer;
+
+                        a {
+                            i {
+                                margin-right: 5px;
+                                font-size: 15px;
+                                transition: all 0.5s;
+                                transform: rotate(-45deg);
+                            }
+                        }
 
                         &:hover {
                             background-color: white;
                             color: green;
+
+                            i {
+                                transform: rotate(135deg);
+                            }
                         }
                     }
                 }
 
-                .owl-nav {
-                    color: #666;
-                    font-size: 62px;
-
-                    @media screen and (max-width: 580px) {
-                        display: none;
-                    }
-
-                    .owl-prev {
-                        position: absolute;
-                        top: 20%;
-                        left: -35px;
-                        outline: none;
-
-                        &:hover {
-                            background-color: unset;
-                            color: #666;
-                        }
-                    }
-
-                    .owl-next {
-                        position: absolute;
-                        top: 20%;
-                        right: -35px;
-                        outline: none;
-
-                        &:hover {
-                            background-color: unset;
-                            color: #666;
-                        }
-                    }
-                }
             }
 
         }
