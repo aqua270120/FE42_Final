@@ -1,5 +1,5 @@
 .event {
-    background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-home-02.jpg");
+    background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-cinema-10.png");
     @include bgParallax;
     padding: 50px 0px 30px;
 
@@ -9,19 +9,20 @@
                 display: flex;
                 justify-content: center;
                 border-bottom: none;
+                margin-bottom: 50px;
 
                 li {
                     a {
                         background-color: transparent;
                         border: none;
-                        @include styleLinks(#bcdc95, 28px, 500);
+                        @include styleLinks(white, 28px, 500);
                         text-transform: uppercase;
                         padding: 0;
                         letter-spacing: 1px;
 
                         &.active {
-                            @include styleLinks(#bcdc95, 28px, 600);
-                            border-bottom: 1px solid #bcdc95;
+                            @include styleLinks(#d4dd29, 28px, 600);
+                            border-bottom: 1px solid #d4dd29;
                         }
                     }
                 }
@@ -29,8 +30,69 @@
                 .line {
                     width: 3px;
                     height: 30px;
-                    background-color: #bcdc95;
+                    background-color: white;
                     margin: auto 10px;
+                }
+            }
+
+            .eventTabContent {
+                .event__item {
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 100%;
+                        transition: all 0.5s;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    .even__item--info {
+                        padding: 30px 10px;
+                        background-color: #172029;
+
+                        a {
+                            @include styleLinks(white, 14px, 500);
+                            transition: all 0.5s;
+                            letter-spacing: 1px;
+
+                            &:hover {
+                                color: #d4dd29;
+                            }
+                        }
+
+                        .event__item--title {
+                            display: block;
+                            margin-bottom: 13px;
+                        }
+
+                        .event__item--like {
+                            @include styleLinks(#8b9aaa, 12px, 500);
+                        }
+
+                        .event__item--share {
+                            float: right;
+                            color: #8b9aaa;
+                            background-color: #3b5998;
+                            padding: 3px 5px;
+                            border-radius: 5px;
+
+                            &:hover {
+                                color: black;
+                                background-color: #d4dd29;
+                            }
+                        }
+
+                        .clearfix {
+                            clear: both;
+                        }
+                    }
+
+                    @include responsive("medium") {
+                        width: 270px;
+                        margin: 20px auto;
+                    }
                 }
             }
         }
