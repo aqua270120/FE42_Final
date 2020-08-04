@@ -1,6 +1,7 @@
 .coWorker {
     padding: 20px 0px 0px;
-    background-color: #222;
+    background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-grid.jpg");
+    @include bgParallax();
     color: #949494;
 
     .coWorker__content {

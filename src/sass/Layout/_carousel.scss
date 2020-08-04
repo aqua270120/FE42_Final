@@ -40,11 +40,12 @@
 
         .carousel-control-prev {
             @include setUpCarouselArrow("./../imgs/back-session.png", 1);
-
+            color: white;
         }
 
         .carousel-control-next {
             @include setUpCarouselArrow("./../imgs/next-session.png", 2);
+            color: white;
         }
     }
 }

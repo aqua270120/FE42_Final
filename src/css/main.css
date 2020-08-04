@@ -16,12 +16,12 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #d8d8d8;
+  background-color: #7b7b7b;
   opacity: 1;
 }
 
 .myCarousel .carousel .carousel-indicators li.active {
-  background-color: #fb4226;
+  background-color: #d4dd29;
 }
 
 .movieBooklet .movieBooklet__content .myTabContent .owl-nav button {
@@ -44,24 +44,6 @@
   .movieBooklet .movieBooklet__content .myTabContent .owl-nav {
     display: none;
   }
-}
-
-.eventTabContent .eventCarousel .owl-stage-outer {
-  margin: 50px 0px 30px;
-}
-
-.eventTabContent .eventCarousel .owl-dots .owl-dot {
-  outline: none;
-}
-
-.eventTabContent .eventCarousel .owl-dots .owl-dot span {
-  width: 12px;
-  height: 12px;
-  background-color: white;
-}
-
-.eventTabContent .eventCarousel .owl-dots .owl-dot.active span {
-  background-color: #45ab3c;
 }
 
 .navBarHeader {
@@ -316,6 +298,7 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 15px;
+  color: white;
 }
 
 .myCarousel .carousel .carousel-control-next {
@@ -329,6 +312,7 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 15px;
+  color: white;
 }
 
 .bookMovie {
@@ -527,7 +511,7 @@
 }
 
 .event {
-  background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-home-02.jpg");
+  background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-cinema-10.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -544,12 +528,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: none;
+  margin-bottom: 50px;
 }
 
 .event .event__content .event__list .event__header li a {
   background-color: transparent;
   border: none;
-  color: #bcdc95;
+  color: white;
   font-size: 28px;
   font-weight: 500;
   text-decoration: none;
@@ -559,18 +544,88 @@
 }
 
 .event .event__content .event__list .event__header li a.active {
-  color: #bcdc95;
+  color: #d4dd29;
   font-size: 28px;
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid #bcdc95;
+  border-bottom: 1px solid #d4dd29;
 }
 
 .event .event__content .event__list .event__header .line {
   width: 3px;
   height: 30px;
-  background-color: #bcdc95;
+  background-color: white;
   margin: auto 10px;
+}
+
+.event .event__content .event__list .eventTabContent .event__item {
+  margin-bottom: 20px;
+}
+
+.event .event__content .event__list .eventTabContent .event__item img {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.event .event__content .event__list .eventTabContent .event__item img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.event .event__content .event__list .eventTabContent .event__item .even__item--info {
+  padding: 30px 10px;
+  background-color: #172029;
+}
+
+.event .event__content .event__list .eventTabContent .event__item .even__item--info a {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  letter-spacing: 1px;
+}
+
+.event .event__content .event__list .eventTabContent .event__item .even__item--info a:hover {
+  color: #d4dd29;
+}
+
+.event .event__content .event__list .eventTabContent .event__item .even__item--info .event__item--title {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.event .event__content .event__list .eventTabContent .event__item .even__item--info .event__item--like {
+  color: #8b9aaa;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.event .event__content .event__list .eventTabContent .event__item .even__item--info .event__item--share {
+  float: right;
+  color: #8b9aaa;
+  background-color: #3b5998;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.event .event__content .event__list .eventTabContent .event__item .even__item--info .event__item--share:hover {
+  color: black;
+  background-color: #d4dd29;
+}
+
+.event .event__content .event__list .eventTabContent .event__item .even__item--info .clearfix {
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .event .event__content .event__list .eventTabContent .event__item {
+    width: 270px;
+    margin: 20px auto;
+  }
 }
 
 .footer {
@@ -673,7 +728,12 @@
 
 .coWorker {
   padding: 20px 0px 0px;
-  background-color: #222;
+  background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-grid.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
   color: #949494;
 }
 
