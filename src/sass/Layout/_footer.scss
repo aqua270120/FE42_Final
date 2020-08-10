@@ -26,6 +26,7 @@
                 border: 1px solid transparent;
                 @include styleLinks(white, 16px, 700);
                 width: 50%;
+                outline: none;
 
                 @include responsive("medium") {
                     margin: 0 auto;

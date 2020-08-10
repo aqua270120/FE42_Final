@@ -675,6 +675,7 @@
   font-weight: 700;
   text-decoration: none;
   width: 50%;
+  outline: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -734,7 +735,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  color: #949494;
+  background-size: auto;
+  background-repeat: unset;
 }
 
 .coWorker .coWorker__content {
@@ -797,7 +799,7 @@
 
 .coWorker .coWorker__content .coWorker__afterCredit {
   padding: 30px 0px 0px;
-  border-top: 1px solid;
+  border-top: 1px solid #949494;
 }
 
 .coWorker .coWorker__content .coWorker__afterCredit h4 {

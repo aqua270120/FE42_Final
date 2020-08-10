@@ -2,7 +2,8 @@
     padding: 20px 0px 0px;
     background-image: url("https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-grid.jpg");
     @include bgParallax();
-    color: #949494;
+    background-size: auto;
+    background-repeat: unset;
 
     .coWorker__content {
         width: 940px;
@@ -61,7 +62,7 @@
 
         .coWorker__afterCredit {
             padding: 30px 0px 0px;
-            border-top: 1px solid;
+            border-top: 1px solid #949494;
 
             h4 {
                 @include styleLinks(white, 12px, 400);
